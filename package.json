@@ -2,7 +2,7 @@
   "name": "@sinonjs/commons",
   "version": "1.0.0",
   "description": "Simple functions shared among the sinon end user libraries",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
     "precommit": "lint-staged",
