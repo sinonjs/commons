@@ -19,6 +19,8 @@ plugins:
 
 rules:
   strict: [error, 'global']
+  # authors are expected to understand function hoisting
+  no-use-before-define: off
 
   ie11/no-collection-args: error
   ie11/no-for-in-const: error
