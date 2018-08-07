@@ -1,5 +1,7 @@
 # commons
 
+[![Build status](https://secure.travis-ci.org/sinonjs/commons.svg?branch=master)](http://travis-ci.org/sinonjs/commons) [![Coverage Status](https://coveralls.io/repos/github/sinonjs/commons/badge.svg?branch=master)](https://coveralls.io/github/sinonjs/commons?branch=master)
+
 Simple functions shared among the sinon end user libraries
 
 ## Rules
