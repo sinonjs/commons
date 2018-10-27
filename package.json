@@ -1,6 +1,6 @@
 {
   "name": "@sinonjs/commons",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Simple functions shared among the sinon end user libraries",
   "main": "lib/index.js",
   "scripts": {
