@@ -43,7 +43,7 @@
     "knuth-shuffle": "^1.0.8",
     "lint-staged": "9.5.0",
     "mocha": "6.2.2",
-    "nyc": "14.1.1",
+    "nyc": "15.0.0",
     "prettier": "^1.14.3"
   },
   "dependencies": {
