@@ -39,7 +39,7 @@
     "eslint-plugin-local-rules": "^0.1.0",
     "eslint-plugin-mocha": "^6.1.1",
     "eslint-plugin-prettier": "^3.0.0",
-    "husky": "4.2.1",
+    "husky": "4.2.3",
     "jsverify": "0.8.4",
     "knuth-shuffle": "^1.0.8",
     "lint-staged": "10.0.8",
