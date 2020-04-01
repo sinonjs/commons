@@ -45,7 +45,7 @@
     "lint-staged": "10.0.8",
     "mocha": "7.1.0",
     "nyc": "15.0.0",
-    "prettier": "^1.14.3"
+    "prettier": "^2.0.2"
   },
   "dependencies": {
     "type-detect": "4.0.8"
