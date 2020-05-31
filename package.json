@@ -17,6 +17,9 @@
     "type": "git",
     "url": "git+https://github.com/sinonjs/commons.git"
   },
+  "files": [
+    "lib"
+  ],
   "author": "",
   "license": "BSD-3-Clause",
   "bugs": {
