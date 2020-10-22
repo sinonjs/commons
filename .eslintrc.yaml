@@ -15,7 +15,7 @@ globals:
 
 plugins:
   - ie11
-  - local-rules
+  -  "@sinonjs/no-prototype-methods"
 
 rules:
   strict: [error, 'global']
@@ -26,7 +26,7 @@ rules:
   ie11/no-for-in-const: error
   ie11/no-loop-func: warn
   ie11/no-weak-collections: error
-  local-rules/no-prototype-methods: error
+  "@sinonjs/no-prototype-methods/no-prototype-methods": error
 
 overrides:
     - files: '*.test.*'
@@ -49,4 +49,4 @@ overrides:
         mocha/no-sibling-hooks: error
         mocha/no-skipped-tests: error
         mocha/no-top-level-hooks: error
-        local-rules/no-prototype-methods: off
+        "@sinonjs/no-prototype-methods/no-prototype-methods": off
