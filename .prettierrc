@@ -1,3 +1,2 @@
-{
-  "tabWidth": 4
-}
+# This project uses Prettier defaults, the config file is present in
+# order to trigger editor plugins to allow format on save behaviour

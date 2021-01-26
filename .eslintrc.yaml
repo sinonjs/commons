@@ -1,6 +1,5 @@
 extends:
     - sinon
-    - 'plugin:prettier/recommended'
 
 env:
   browser: true
@@ -27,6 +26,7 @@ rules:
   ie11/no-loop-func: warn
   ie11/no-weak-collections: error
   "@sinonjs/no-prototype-methods/no-prototype-methods": error
+  prettier/prettier: off
 
 overrides:
     - files: '*.test.*'
