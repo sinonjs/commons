@@ -58,5 +58,10 @@
   },
   "dependencies": {
     "type-detect": "4.0.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
