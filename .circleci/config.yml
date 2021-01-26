@@ -58,15 +58,6 @@ jobs:
                   name: prettier
                   command: npm run prettier:check
 
-    node-8:
-        docker:
-            - image: circleci/node:8
-        steps:
-            - *attach-step
-            - run:
-                  name: Test
-                  command: npm test
-
     node-10:
         docker:
             - image: circleci/node:10
@@ -88,6 +79,15 @@ jobs:
                   name: Upload coverage report
                   command: bash <(curl -s https://codecov.io/bash) -F unit -s coverage/lcov.info
 
+    node-14:
+        docker:
+            - image: circleci/node:14
+        steps:
+            - *attach-step
+            - run:
+                  name: Test
+                  command: npm test
+
 workflows:
     version: 2
     commons-circle-ci:
@@ -99,12 +99,12 @@ workflows:
             - prettier:
                   requires:
                       - install-dependencies
-            - node-8:
-                  requires:
-                      - install-dependencies
             - node-10:
                   requires:
                       - install-dependencies
             - node-12:
+                  requires:
+                      - install-dependencies
+            - node-14:
                   requires:
                       - install-dependencies
