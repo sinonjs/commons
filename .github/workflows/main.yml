@@ -100,4 +100,4 @@ jobs:
               env:
                   HUSKY_SKIP_INSTALL: 1
             - name: npm test
-              run: npm run test-node
+              run: npm test
