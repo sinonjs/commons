@@ -16,7 +16,8 @@
     "prettier:write": "prettier --write '**/*.{js,css,md}'",
     "preversion": "npm run test-check-coverage",
     "version": "changes --commits --footer",
-    "postversion": "git push --follow-tags && npm publish"
+    "postversion": "git push --follow-tags && npm publish",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -41,7 +42,7 @@
     "@sinonjs/eslint-plugin-no-prototype-methods": "^0.1.0",
     "@sinonjs/referee-sinon": "^10.1.0",
     "@studio/changes": "^2.2.0",
-    "husky": "4.3.8",
+    "husky": "^6.0.0",
     "jsverify": "0.8.4",
     "knuth-shuffle": "^1.0.8",
     "lint-staged": "10.1.1",
@@ -52,10 +53,5 @@
   },
   "dependencies": {
     "type-detect": "4.0.8"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
