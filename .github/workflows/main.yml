@@ -100,4 +100,6 @@ jobs:
               env:
                   HUSKY_SKIP_INSTALL: 1
             - name: npm test
-              run: npm test
+              run: |
+                  npm test
+                  npm test --disable-proto=throw
