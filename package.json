@@ -49,7 +49,7 @@
     "mocha": "^10.1.0",
     "nyc": "^15.1.0",
     "prettier": "^2.7.1",
-    "typescript": "^4.1.3"
+    "typescript": "^4.8.4"
   },
   "dependencies": {
     "type-detect": "4.0.8"
