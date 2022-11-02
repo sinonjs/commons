@@ -1,5 +1,12 @@
 # Changes
 
+## 1.8.4
+
+- [`9305715`](https://github.com/sinonjs/commons/commit/93057156fcaec1917c2d95bce8ab641e2defb556)
+  Fix #89: detect error on access to __proto__ (Morgan Roderick)
+
+_Released by Morgan Roderick on 2022-11-02._
+
 ## 1.8.3
 
 - [`6af2d0c`](https://github.com/sinonjs/commons/commit/6af2d0cf33e9fd1e4aaef5308fd16a9cd78a5782)
