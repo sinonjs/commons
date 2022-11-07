@@ -1,5 +1,14 @@
 # Changes
 
+## 1.8.5
+
+- [`06fb4d4`](https://github.com/sinonjs/commons/commit/06fb4d40b038f9124f47c445bb611482f0be89b0)
+  [Fix] use `indexOf` instead of `includes` (Jordan Harband)
+    >
+    > This restores ES5 compatibility for use with sinon@9
+
+_Released by Morgan Roderick on 2022-11-07._
+
 ## 1.8.4
 
 - [`9305715`](https://github.com/sinonjs/commons/commit/93057156fcaec1917c2d95bce8ab641e2defb556)
