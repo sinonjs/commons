@@ -1,5 +1,15 @@
 # Changes
 
+## 2.0.0
+
+- [`f890f87`](https://github.com/sinonjs/commons/commit/f890f87dcb00de11069c2e52194bc3f5f9798175)
+  Prefer ES2017 (Morgan Roderick)
+    >
+    > See v1.8.5 for backwards compatibility with ES5
+    >
+
+_Released by Morgan Roderick on 2022-11-07._
+
 ## 1.8.5
 
 - [`06fb4d4`](https://github.com/sinonjs/commons/commit/06fb4d40b038f9124f47c445bb611482f0be89b0)
