@@ -1,5 +1,12 @@
 # Changes
 
+## 3.0.0
+
+- [`b0253f8`](https://github.com/sinonjs/commons/commit/b0253f86b661321ae3f5334706eb96e860af4cd4)
+  Drop node 12, hello node 18 (Morgan Roderick)
+
+_Released by Morgan Roderick on 2022-11-28._
+
 ## 2.0.0
 
 - [`f890f87`](https://github.com/sinonjs/commons/commit/f890f87dcb00de11069c2e52194bc3f5f9798175)
