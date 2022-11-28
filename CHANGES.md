@@ -1,5 +1,14 @@
 # Changes
 
+## 1.8.6
+
+- [`909af67`](https://github.com/sinonjs/commons/commit/909af6790a253fc916590924a2b2df668176fa90)
+  Revert from template string to concatenation (Oleksandr Shvetsov)
+    >
+    > This restores ES5 compatibility for use with sinon@9
+
+_Released by Morgan Roderick on 2022-11-28._
+
 ## 1.8.5
 
 - [`06fb4d4`](https://github.com/sinonjs/commons/commit/06fb4d40b038f9124f47c445bb611482f0be89b0)
