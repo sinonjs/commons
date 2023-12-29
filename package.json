@@ -12,8 +12,8 @@
   "types": "./types/index.d.ts",
   "scripts": {
     "build": "rm -rf types && tsc && npm run bundle-cjs && npm run bundle-esm",
-    "bundle-cjs": "esbuild lib/index.cjs --bundle --format=cjs --outfile=dist/index.cjs",
-    "bundle-esm": "esbuild lib/index.cjs --bundle --format=esm --outfile=dist/index.mjs",
+    "bundle-cjs": "esbuild lib/index.mjs --bundle --format=cjs --outfile=dist/index.cjs",
+    "bundle-esm": "esbuild lib/index.mjs --bundle --format=esm --outfile=dist/index.mjs",
     "lint": "eslint .",
     "precommit": "lint-staged",
     "test": "mocha --recursive -R dot \"lib/**/*.test.cjs\" \"lib/**/*.test.mjs\"",
