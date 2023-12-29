@@ -9,6 +9,7 @@
       "import": "./dist/index.mjs"
     }
   },
+  "type": "module",
   "types": "./types/index.d.ts",
   "scripts": {
     "build": "rm -rf types && tsc && npm run bundle-cjs && npm run bundle-esm",
