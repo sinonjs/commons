@@ -1,9 +1,11 @@
 {
   "include": [
-      "lib/*.js"
+      "lib/*.cjs",
+      "lib/*.mjs",
   ],
   "exclude" : [
-    "lib/*.test.js"
+    "lib/*.test.cjs",
+    "lib/*.test.mjs"
   ],
   "compilerOptions": {
     "declaration": true,

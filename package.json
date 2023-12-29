@@ -2,13 +2,21 @@
   "name": "@sinonjs/commons",
   "version": "3.0.1",
   "description": "Simple functions shared among the sinon end user libraries",
-  "main": "lib/index.js",
+  "main": "./dist/index.cjs",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
   "types": "./types/index.d.ts",
   "scripts": {
-    "build": "rm -rf types && tsc",
+    "build": "rm -rf types && tsc && npm run bundle-cjs && npm run bundle-esm",
+    "bundle-cjs": "esbuild lib/index.cjs --bundle --format=cjs --outfile=dist/index.cjs",
+    "bundle-esm": "esbuild lib/index.cjs --bundle --format=esm --outfile=dist/index.mjs",
     "lint": "eslint .",
     "precommit": "lint-staged",
-    "test": "mocha --recursive -R dot \"lib/**/*.test.js\"",
+    "test": "mocha --recursive -R dot \"lib/**/*.test.cjs\" \"lib/**/*.test.mjs\"",
     "test-check-coverage": "npm run test-coverage && nyc check-coverage --branches 100 --functions 100 --lines 100",
     "test-coverage": "nyc --reporter text --reporter html --reporter lcovonly npm run test",
     "prepublishOnly": "npm run build",
@@ -25,6 +33,7 @@
   },
   "files": [
     "lib",
+    "dist",
     "types"
   ],
   "author": "",
@@ -42,6 +51,7 @@
     "@sinonjs/eslint-plugin-no-prototype-methods": "^0.1.0",
     "@sinonjs/referee-sinon": "^10.1.0",
     "@studio/changes": "^2.2.0",
+    "esbuild": "^0.19.10",
     "husky": "^6.0.0",
     "jsverify": "0.8.4",
     "knuth-shuffle": "^1.0.8",
