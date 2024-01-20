@@ -1,5 +1,19 @@
 # Changes
 
+## 3.0.1
+
+- [`f82068f`](https://github.com/sinonjs/commons/commit/f82068f633523edd42b01df28d031b2cacfbcc1d)
+  chore: remove obsolete IE11 code (Morgan Roderick)
+    >
+    > When we upgraed to @sinonjs/eslint-config@4 in
+    > 09e99f4e310c20408df50330124e4d68a60e9b6a we effectively removed support
+    > for IE11.
+    >
+    > That means that this code branch is obsolete and is safe to remove.
+    >
+
+_Released by Morgan Roderick on 2024-01-20._
+
 ## 3.0.0
 
 - [`b0253f8`](https://github.com/sinonjs/commons/commit/b0253f86b661321ae3f5334706eb96e860af4cd4)
