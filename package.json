@@ -1,16 +1,25 @@
 {
   "name": "@sinonjs/commons",
-  "version": "3.0.1",
+  "version": "4.0.0-alpha.0",
   "description": "Simple functions shared among the sinon end user libraries",
-  "main": "lib/index.js",
+  "main": "./dist/index.cjs",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "type": "module",
   "types": "./types/index.d.ts",
   "scripts": {
-    "build": "rm -rf types && tsc",
+    "build": "rm -rf types && tsc && npm run bundle-cjs && npm run bundle-esm",
+    "bundle-cjs": "esbuild lib/index.mjs --bundle --format=cjs --outfile=dist/index.cjs",
+    "bundle-esm": "esbuild lib/index.mjs --bundle --format=esm --outfile=dist/index.mjs",
     "lint": "eslint .",
     "precommit": "lint-staged",
-    "test": "mocha --recursive -R dot \"lib/**/*.test.js\"",
-    "test-check-coverage": "npm run test-coverage && nyc check-coverage --branches 100 --functions 100 --lines 100",
-    "test-coverage": "nyc --reporter text --reporter html --reporter lcovonly npm run test",
+    "test": "mocha --recursive -R dot \"lib/**/*.test.*\"",
+    "test-check-coverage": "npm run test-coverage && c8 check-coverage --branches 100 --functions 100 --lines 100",
+    "test-coverage": "c8 --reporter text --reporter html --reporter lcovonly npm run test",
     "prepublishOnly": "npm run build",
     "prettier:check": "prettier --check '**/*.{js,css,md}'",
     "prettier:write": "prettier --write '**/*.{js,css,md}'",
@@ -25,6 +34,7 @@
   },
   "files": [
     "lib",
+    "dist",
     "types"
   ],
   "author": "",
@@ -42,12 +52,17 @@
     "@sinonjs/eslint-plugin-no-prototype-methods": "^0.1.0",
     "@sinonjs/referee-sinon": "^10.1.0",
     "@studio/changes": "^2.2.0",
+    "c8": "^9.1.0",
+    "esbuild": "^0.19.10",
+    "eslint": "^8.56.0",
+    "eslint-plugin-compat": "^4.2.0",
+    "eslint-plugin-jsdoc": "^46.9.1",
+    "eslint-plugin-mocha": "^10.2.0",
     "husky": "^6.0.0",
     "jsverify": "0.8.4",
     "knuth-shuffle": "^1.0.8",
-    "lint-staged": "^13.0.3",
+    "lint-staged": "^13.3.0",
     "mocha": "^10.1.0",
-    "nyc": "^15.1.0",
     "prettier": "^2.7.1",
     "typescript": "^4.8.4"
   },

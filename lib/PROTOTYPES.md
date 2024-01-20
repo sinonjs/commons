@@ -1,6 +1,6 @@
 # Prototypes
 
-The functions in this folder are to be use for keeping cached references to the built-in prototypes, so that people can't inadvertently break the library by making mistakes in userland.
+The functions in this module are to be used for keeping cached references to the built-in prototypes, so that people can't inadvertently break the library by making mistakes in userland.
 
 See https://github.com/sinonjs/sinon/pull/1523
 
