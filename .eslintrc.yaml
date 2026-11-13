@@ -1,5 +1,0 @@
-extends:
-    - "@sinonjs/eslint-config"
-
-plugins:
-    - "@sinonjs/no-prototype-methods"

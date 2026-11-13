@@ -38,10 +38,11 @@
     "*.js": "eslint"
   },
   "devDependencies": {
-    "@sinonjs/eslint-config": "^4.0.6",
-    "@sinonjs/eslint-plugin-no-prototype-methods": "^0.1.0",
+    "@sinonjs/eslint-config": "^7.0.3",
+    "@sinonjs/eslint-plugin-no-prototype-methods": "^0.1.1",
     "@sinonjs/referee-sinon": "^10.1.0",
     "@studio/changes": "^2.2.0",
+    "eslint": "^10.14.0",
     "husky": "^6.0.0",
     "jsverify": "0.8.4",
     "knuth-shuffle": "^1.0.8",
